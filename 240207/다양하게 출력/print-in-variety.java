@@ -4,6 +4,6 @@ public class Main {
         System.out.println("Total days in Year");
         System.out.println(365);
         System.out.println("Circumference rate");
-        System.out.println(3.1415926535f);
+        System.out.println(3.1415926535d);
     }
 }
