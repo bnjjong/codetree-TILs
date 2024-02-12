@@ -28,6 +28,7 @@ public class Main {
             // System.out.println("i:"+i);
             for (int j=0; j< n-1; j++){
                 if (j == i) continue; 
+                // j+1 == i 비교하려는 대상자가 건널뛸 좌표이면 j+2 를 하여 다음 좌표를 가르키게 한다. 
                 int compareXyIdx = j+1 == i ? j + 2 : j + 1;
                 int distanceX = Math.abs(xy[j][0] - xy[compareXyIdx][0]);
                 int distanceY = Math.abs(xy[j][1] - xy[compareXyIdx][1]);
