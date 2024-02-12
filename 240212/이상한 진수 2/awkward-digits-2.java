@@ -16,7 +16,7 @@ public class Main {
             }
         }
         if (isAllNumber1) {
-            binary[binary.length] = '0';
+            binary[binary.length-1] = '0';
         }
         int resultMaxNum = Integer.parseInt(new String(binary), 2);
 
