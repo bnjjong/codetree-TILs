@@ -6,7 +6,18 @@ public class Main {
         int n = sc.nextInt();
         int m = sc.nextInt();
 
-        System.out.print(getLcm(n,m));
+        // System.out.print(getLcm(n,m));
+        System.out.print(findLCM(n,m));
+    }
+
+    public static int findLCM(int n, int m) {
+        int gcd = 0;
+        for(int i = 1; i <= Math.min(n, m); i++) {
+            if(n % i == 0 && m % i == 0)
+                gcd = i; // 12 18 일때 최종 6이 들어감.
+        }
+    
+        return n * m / gcd; // 12 * 18 / 6이 됨. 수가 3개 이상일 경우 사용할 수 없음.
     }
 
     public static int getLcm(int n, int m) {
