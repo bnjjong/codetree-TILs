@@ -19,15 +19,20 @@ public class Main {
             // 시작 점.
             int s = i;
             // j 룸 가중치
-            for (int j=0; j<n; j++) {
-                // 시작점을 가져와야 함.
-                isum += ra[s] * j;
-                // System.out.printf("s = %d, isum = %d\n", s, isum);
-                s++;
-                if (s >= n) {
-                    s = 0;
-                }
+            // for (int j=0; j<n; j++) {
+            //     // 시작점을 가져와야 함.
+            //     isum += ra[s] * j;
+            //     // System.out.printf("s = %d, isum = %d\n", s, isum);
+            //     s++;
+            //     if (s >= n) {
+            //         s = 0;
+            //     }
                 
+            // }
+            for(int j = 0; j < n; j++) {
+                // 거리 구하기. 간단하지만 가독성이 좀.. 내가 수학을 못해서 그런가...;;
+                int dist = (j + n - i) % n; // (3 + 5 - 2) = 6 % 5 = 1 
+                isum += dist * ra[j];
             }
             minSum = Math.min(minSum, isum);
         }
