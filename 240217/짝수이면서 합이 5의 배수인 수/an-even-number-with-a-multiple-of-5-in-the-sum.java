@@ -9,9 +9,11 @@ public class Main {
     }
 
     public static boolean isMagicN(int n) {
+        // 아래 n1, n2 코드를 (n / 10 + (n % 10)) 이렇게 대체 가능함.
         int n1 = Integer.parseInt(String.valueOf(n).substring(0,1));
         int n2 = Integer.parseInt(String.valueOf(n).substring(1));
         // System.out.printf("%d, %d",n1,n2);
         return n % 2 == 0 && (n1 + n2) % 5 == 0;
+        
     }
 }
