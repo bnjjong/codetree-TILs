@@ -15,21 +15,24 @@ public class Main {
         for (int i=2; i<=maxN; i++) {
             if (n % i == 0 && m % i == 0) {
                 // System.out.printf("%d, %d, %d \n", i, n/i, m/i);
-
                 int n2 = n/i;
                 int m2 = m/i;
                 if (isPrime(n2) && isPrime(m2)) {
                     // System.out.println("isPrime.");
                     lcm *= (i * n2 * m2);
                 } else {
-                    lcm *= i;
-                    lcm *= getLcm(n/i, m/i);
+                    lcm *= i * getLcm(n/i, m/i);
                 }
                 // System.out.println("lcm = " + lcm);
                 break;
             }
         }
-        return lcm;
+        if (lcm == 1) {
+            return lcm = n * m;
+        } else {
+            return lcm;
+        }
+        
     }
     public static boolean isPrime(int number) {
         if (number <= 1) {
