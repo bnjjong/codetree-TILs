@@ -17,14 +17,22 @@ public class Main {
     public static boolean isConditionN(int n) {
         if (isPrime(n)) {
             // System.out.println(n);
+            // System.out.println("n = " + n);
             int sum = 0;
-            while(n >= 10) {
-                sum += n % 10;
-                n = n/10;
-                if (n < 10) {
-                    sum += n;
+            if (n < 10) {
+                sum = n;
+            } else {
+                while(n >= 10) {
+                    sum += n % 10;
+                    n = n/10;
+                    if (n < 10) {
+                        sum += n;
+                    }
+                    // System.out.print("sum="+sum+" ");
                 }
+                // System.out.println();
             }
+            
             if (sum % 2 ==0) {
                 return true;
             }
