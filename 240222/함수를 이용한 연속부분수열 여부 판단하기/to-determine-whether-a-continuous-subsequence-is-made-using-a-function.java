@@ -27,7 +27,7 @@ public class Main {
             // 현재 인덱스에서 남은 인덱스 차를 구하고 비교할 b와 사이즈 비교해서 break
             // 1 2 1 3
             // 1 3
-            if ((a.length - (i + 1)) < b.length) {
+            if (a.length - i < b.length) {
                 break;
             } 
             if (a[i] == startN) {
@@ -37,7 +37,9 @@ public class Main {
                         isMatch = false;
                     }
                 }
-                return isMatch;
+                if (isMatch) {
+                    return true;
+                }
             }
         }
         return false;
