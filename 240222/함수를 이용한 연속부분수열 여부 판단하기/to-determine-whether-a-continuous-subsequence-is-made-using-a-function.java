@@ -25,7 +25,9 @@ public class Main {
         int startN = b[0];
         for (int i=0; i<a.length; i++) {
             // 현재 인덱스에서 남은 인덱스 차를 구하고 비교할 b와 사이즈 비교해서 break
-            if ((a.length - i + 1) < b.length) {
+            // 1 2 1 3
+            // 1 3
+            if ((a.length - (i + 1)) < b.length) {
                 break;
             } 
             if (a[i] == startN) {
