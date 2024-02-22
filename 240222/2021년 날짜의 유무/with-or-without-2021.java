@@ -1,7 +1,4 @@
-import java.util.Scanner;
-import java.util.Date;
-import java.text.SimpleDateFormat;
-import java.text.ParseException;
+import java.util.*;
 public class Main {
     public static void main(String[] args) {
         // 여기에 코드를 작성해주세요.
@@ -14,10 +11,11 @@ public class Main {
 
     public static boolean isDate(int m, int d) {
         try {
-            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-            String format = String.format("2021-%02d-02d",m, d);
-            Date date = dateFormat.parse(format);
-        } catch (ParseException e) {
+            Calendar calendar = Calendar.getInstance();
+            calendar.setLenient(false);
+            calendar.set(2021, m - 1, d);
+            calendar.getTime();
+        } catch (Exception e) {
             return false;
         }
         return true;
