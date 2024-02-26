@@ -13,12 +13,10 @@ public class Main {
         
         Set<Character> charSet = new HashSet<>();
         for (int i=0; i<ac.length; i++) {
-            if (charSet.contains(ac[i])) {
-                if (charSet.size() > 2 ) {
-                    return true;
-                }
-            }
             charSet.add(ac[i]);
+            if (charSet.size() > 2 ) {
+                return true;
+            }
         }
 
         return false;
