@@ -14,7 +14,7 @@ public class Main {
         Set<Character> charSet = new HashSet<>();
         for (int i=0; i<ac.length; i++) {
             charSet.add(ac[i]);
-            if (charSet.size() > 2 ) {
+            if (charSet.size() >= 2 ) {
                 return true;
             }
         }
