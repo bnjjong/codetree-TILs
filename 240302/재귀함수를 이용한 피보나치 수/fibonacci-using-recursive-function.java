@@ -13,11 +13,14 @@ public class Main {
 
     // 피보나치 재귀 계산
     public static int calc(int n) {
-        if (n < 1) {
-            return 0;
-        } else if(n == 1) {
+        // if (n < 1) {
+        //     return 0;
+        // } else if(n == 1) {
+        //     return 1;
+        // } 
+        // 첫 번째, 두 번째 원소는 1입니다.
+        if(n <= 2)
             return 1;
-        } 
         
         return calc(n - 1) + calc(n - 2);
     }
