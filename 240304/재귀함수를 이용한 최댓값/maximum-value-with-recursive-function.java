@@ -17,11 +17,9 @@ public class Main {
     }
 
     public static int getMaxN(int n, int[] arr) {
-        if (n == 1) {
+        if (n == 0) {
             return arr[n];
         }
-
         return Math.max(arr[n], getMaxN(n-1, arr));
-
     }
 }
