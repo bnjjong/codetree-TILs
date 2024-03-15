@@ -12,7 +12,7 @@ public class Main {
         }
 
         // Arrays.sort(arr, Collections.reverseOrder());
-        Arrays.sort(arr, Collections.reverseOrder());
+        Arrays.sort(arr);
 
         System.out.print(arr[k-1]);
 
