@@ -13,8 +13,9 @@ public class Main {
         for (int i=0; i<n; i++) {
             arr2[i] = sc.nextInt();
         }
-        Arrays.sort(arr1);
-        Arrays.sort(arr2);
+        //Object 타입의 배열을 인자로 받아 주어진 배열의 시작 인덱스부터 끝 인덱스까지의 데이터를 natural ordering에 따라 정렬
+        Arrays.sort(arr1,0,n);
+        Arrays.sort(arr2,0,n);
 
         boolean isSame = true;
         for (int i=0; i<n; i++) {
