@@ -14,7 +14,7 @@ public class Main {
         // Arrays.sort(arr, Collections.reverseOrder());
         Arrays.sort(arr, Collections.reverseOrder());
 
-        System.out.print(arr[k]);
+        System.out.print(arr[k-1]);
 
 
 
