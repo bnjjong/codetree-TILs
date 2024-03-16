@@ -14,7 +14,7 @@ public class Main {
 
         boolean isSame = true;
         for (int i=0; i<c1.length; i++) {
-            if (c1[i] != c2[i]) {
+            if (c1[i] != c2[i] || c1.length != c2.length) {
                 isSame = false;
                 break;
             }
