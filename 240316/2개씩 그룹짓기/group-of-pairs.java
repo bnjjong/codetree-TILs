@@ -5,8 +5,8 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
 
-        int[] nArr = new int[n];
-        for (int i=0; i<n; i++) {
+        Integer[] nArr = new Integer[n*2];
+        for (int i=0; i<n * 2; i++) {
             nArr[i] = sc.nextInt();
         }
 
@@ -14,11 +14,12 @@ public class Main {
 
     }
 
-    public static int getMinN(int[] nArr, int n) {
-        Arrays.sort(nArr);
+    public static int getMinN(Integer[] nArr, int n) {
+        Arrays.sort(nArr, Collections.reverseOrder());
         int length = nArr.length-1;
         int max = Integer.MIN_VALUE;
         for (int i=0; i<n; i++) {
+            // System.out.printf("%d + %d\n", nArr[i], nArr[length-i]);
             max = Math.max(max, (nArr[i] + nArr[length-i]));
         }
 
