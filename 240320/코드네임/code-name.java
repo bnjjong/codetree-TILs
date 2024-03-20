@@ -16,25 +16,31 @@ public class Main {
 
         int n = 5;
 
-        List<Agent> agents = new ArrayList<>();
+        Agent[] agents = new Agent[n];
         for (int i=0; i<n; i++) {
             String code = sc.next();
             int point = sc.nextInt();    
-            Agent a = new Agent(code, point);
-            agents.add(a);
+            agents[i] = new Agent(code, point);
         }
 
-        int min = Integer.MAX_VALUE;
-        Agent forPrint = null;
-        for (int i=0; i<agents.size(); i++) {
-            if (min > agents.get(i).point) {
-                min = agents.get(i).point;
-                forPrint = new Agent(agents.get(i).code, agents.get(i).point);
-            }
+        // int min = Integer.MAX_VALUE;
+        // Agent forPrint = null;
+        // for (int i=0; i<agents.size(); i++) {
+        //     if (min > agents.get(i).point) {
+        //         min = agents.get(i).point;
+        //         forPrint = new Agent(agents.get(i).code, agents.get(i).point);
+        //     }
             
+        // }
+
+        // 최소 점수를 갖는 요원 찾기
+        int minIdx = 0;
+        for(int i = 1; i < n; i++) {
+            if(agents[minIdx].point > agents[i].point)
+                minIdx = i;
         }
 
-        System.out.printf("%s %d", forPrint.code, forPrint.point);
+        System.out.printf("%s %d", agents[minIdx].code, agents[minIdx].point);
 
         
         
