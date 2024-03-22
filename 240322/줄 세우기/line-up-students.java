@@ -15,7 +15,7 @@ class Student implements Comparable<Student>{
         // 키가 동일하다면, 몸무게가 더 큰 학생이 앞에 와야 합니다.
         // 키와 몸무게가 동일하다면, 번호가 작은 학생이 앞에 와야 합니다.
         if (this.height == student.height && this.weight == student.weight) {
-            return student.no - this.no;
+            return this.no - student.no;
         }
         else if (this.height == student.height) {
             return student.weight - this.weight;
