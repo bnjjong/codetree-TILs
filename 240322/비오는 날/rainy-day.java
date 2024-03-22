@@ -26,6 +26,7 @@ public class Main {
 
         int closedIdx = -1;
         for (int i=0; i<n; i++) {
+            // System.out.printf("%s %s %s i >>>>> %d \n", wArr[i].date, wArr[i].dow, wArr[i].status, closedIdx);
             if (closedIdx == -1 && wArr[i].status.equals("Rain")) {
                 closedIdx = i;
                 continue;
@@ -34,7 +35,8 @@ public class Main {
                 continue;
             }
 
-            if (wArr[i].status.equals("Rain") && wArr[i].date.compareTo(wArr[closedIdx].date) == -1) {
+            if (wArr[i].status.equals("Rain") && wArr[closedIdx].date.compareTo(wArr[i].date) > 0) {
+                // System.out.println("change idx");
                 closedIdx = i;
             }
         }
