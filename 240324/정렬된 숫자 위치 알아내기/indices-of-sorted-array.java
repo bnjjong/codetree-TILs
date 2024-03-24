@@ -45,6 +45,17 @@ public class Main {
             System.out.print(arr[i].sortedIdx+" ");
         }
 
+        // // 정렬된 숫자들의 원래 인덱스를 활용한 정답 배열 저장:
+        // 재배치 정렬 할 때 새로운 배열을 사용.
+        // int[] answer = new int[n];
+        // for(int i = 0; i < n; i++) 
+        //     answer[numbers[i].index] = i + 1; // 인덱스 보정
+
+        // // 출력:
+        // for(int i = 0; i < n; i++){
+        //     System.out.print(answer[i] + " ");
+        // }
+
         
 
     }
