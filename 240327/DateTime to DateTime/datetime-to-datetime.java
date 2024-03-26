@@ -18,25 +18,27 @@ public class Main {
         if (totalMin1 < totalMin2) {
             System.out.println(-1);
         } else {
-            int elapsedMinute = 0;
-            while(true) {
-                if (sd == d && sh == h && sm == m) {
-                    break;
-                }
-                elapsedMinute++;
-                sm++;
-                // System.out.printf("%d-%d:%d\n",sd, sh, sm);
-                if (sm == 60) {
-                    sh++;
-                    sm = 0;
+            // 쉬운 답
+            System.out.println(totalMin1 - totalMin2);
+            // int elapsedMinute = 0;
+            // while(true) {
+            //     if (sd == d && sh == h && sm == m) {
+            //         break;
+            //     }
+            //     elapsedMinute++;
+            //     sm++;
+            //     // System.out.printf("%d-%d:%d\n",sd, sh, sm);
+            //     if (sm == 60) {
+            //         sh++;
+            //         sm = 0;
 
-                    if (sh == 24) {
-                        sd++;
-                        sh = 0;
-                    }
-                }
-            }
-            System.out.println(elapsedMinute);
+            //         if (sh == 24) {
+            //             sd++;
+            //             sh = 0;
+            //         }
+            //     }
+            // }
+            // System.out.println(elapsedMinute);
 
         }
 
