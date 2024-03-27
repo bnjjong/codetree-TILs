@@ -44,7 +44,7 @@ public class Main {
             }
         }
 
-        System.out.println(cntOfWeek + (restOfDiff > iDayIdx ? 1 : 0));
+        System.out.println(cntOfWeek + (restOfDiff >= iDayIdx ? 1 : 0));
 
 
 
