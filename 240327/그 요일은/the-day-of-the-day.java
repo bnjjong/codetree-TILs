@@ -31,14 +31,15 @@ public class Main {
         int diff = numOfDays(m2, d2) - numOfDays(m1, d1);
         int cntOfWeek = diff / 7;
         int restOfDiff = diff % 7;
-        // System.out.println("cnt : " +cntOfWeek +", rest : "+restOfDiff);
+        // System.out.println("diff: "+diff +", cnt : " +cntOfWeek +", rest : "+restOfDiff);
 
         String[] dayOfWeek = new String[]{"Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"};
 
         // iDay idx 구하기
         for (int i=0; i<dayOfWeek.length; i++) {
-            if (dayOfWeek[i] == iDay) {
+            if (dayOfWeek[i].equals(iDay)) {
                 iDayIdx = i;
+                // System.out.println("iDay idx : " + i);
                 break;
             }
         }
