@@ -8,9 +8,10 @@ public class Main {
     
         int m2 = sc.nextInt();
         int d2 = sc.nextInt();
-        
+
         int date1 = m1 * 100 + d1;
         int date2 = m2 * 100 + d2;
+        boolean isBefore = date1 > date2;
 
         String[] days = new String[]{"Mon","Tue","Wed","Thu","Fri","Sat","Sun"};
         int[] num_of_days = new int[]{0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
@@ -24,7 +25,7 @@ public class Main {
                 if (m1 == m2 && d1 == d2) {
                     break;
                 }
-                if (date1 > date2) {
+                if (isBefore) {
                     d1--;
                     idxOfday--;
                     if (idxOfday == -1) {
@@ -40,13 +41,12 @@ public class Main {
                     d1++;
                     idxOfday++;
                     resultDay = days[idxOfday % 7];
-                    // System.out.println(resultDay);
+                    // System.out.println(m1+"-"+d1+" : "+resultDay);
 
                     if (num_of_days[m1] == d1) {
-                        d1 = 1;
+                        d1 = 0;
                         m1 ++;
                         // System.out.println("d1 : "+d1+", m1 : "+m1);
-
                     }
                 }
                 
