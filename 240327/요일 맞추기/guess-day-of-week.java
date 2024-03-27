@@ -30,8 +30,8 @@ public class Main {
                     idxOfday--;
                     if (idxOfday == -1) {
                         idxOfday = 6;
-                        resultDay = days[idxOfday];
                     }
+                    resultDay = days[idxOfday];
 
                     if (d1 == 0) {
                         m1--;
