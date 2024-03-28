@@ -8,7 +8,7 @@ public class Main {
         int idx = 0;
         while(true) {
             if (n < 2) {
-                result[idx++] = n;
+                result[idx] = n;
                 break;
             }
 
@@ -16,7 +16,7 @@ public class Main {
             n /= 2;
         }
 
-        for (int i=idx-1; i>=0; i--) {
+        for (int i=idx; i>=0; i--) {
             System.out.print(result[i]);
         }
     }
