@@ -8,7 +8,7 @@ public class Main {
         String status = "";
         if (n < 0) {
             status = "ice";
-        } else if (n > 100) {
+        } else if (n >= 100) {
             status = "vapor";
         } else {
             status = "water";
