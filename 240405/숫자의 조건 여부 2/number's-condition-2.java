@@ -9,7 +9,7 @@ public class Main {
             result = "A";
         }
 
-        if (a / 2 == 0) {
+        if (a % 2 == 0) {
             result = "B";
         }
 
