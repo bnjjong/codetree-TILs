@@ -8,10 +8,10 @@ public class Main {
         int c = sc.nextInt();
 
         int result1 = (a == Math.min(Math.min(a, b), c)) ? 1 : 0;
-        System.out.println(result1);
+        System.out.print(result1+" ");
 
         int result2 = (a == b && b == c) ? 1 : 0;
-        System.out.println(result2);
+        System.out.print(result2);
 
 
         
