@@ -14,5 +14,10 @@ public class Main {
         } else {
             System.out.println("false");
         }
+
+        // if((y % 4 == 0 && y % 100 != 0) || y % 400 == 0)
+        //     System.out.println("true");
+        // else
+        //     System.out.println("false");
     }
 }
