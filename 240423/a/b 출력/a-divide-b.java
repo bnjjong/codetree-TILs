@@ -5,8 +5,18 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
+        BigDecimal dividend = new BigDecimal(a);
+        BigDecimal divisor = new BigDecimal(b);
 
-        double c = (double)a/b;
-        System.out.printf("%.20f", c);
+        // 나눗셈 수행
+        BigDecimal result = dividend.divide(divisor, 21, BigDecimal.ROUND_DOWN);
+
+        System.out.println(result);
+        
+        
+
+
+
+        
     }
 }
