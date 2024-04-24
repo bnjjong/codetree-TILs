@@ -6,8 +6,7 @@ public class Main {
         String c = sc.next();
         int n = sc.nextInt();
         int idx;
-
-        boolean isPlus =  ? true : false;
+        boolean isPlus;
 
         if (c.equals("A")) {
             isPlus = true;
