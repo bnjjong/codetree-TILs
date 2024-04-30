@@ -6,10 +6,10 @@ public class Main {
         int a = sc.nextInt();
         int b = sc.nextInt();
 
-        if (b > a) {
+        if (a > b) {
             int c = b;
-            int b = a;
-            int a = b;
+            b = a;
+            a = c;
         }
 
         int sum = 0;
