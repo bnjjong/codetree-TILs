@@ -5,12 +5,14 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
 
+        // 입력값 받기.
         int[][] nArr = new int[n][n];
         for (int i=0; i<n; i++) {
             for (int j=0; j<n; j++) {
                 nArr[i][j] = sc.nextInt();
             }
         }
+        // 컬럼별 합계.
         int[] colSum = new int[n+1];
         for (int i=0; i<n; i++) {
             int rowSum = 0;
@@ -25,6 +27,7 @@ public class Main {
             }
             
         }
+        // 컬럼별 합계 출력
         for (int i=0; i<n+1; i++) {
             System.out.print(colSum[i]+" ");
         }
