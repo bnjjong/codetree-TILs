@@ -17,6 +17,7 @@ public class Main {
             // 3 + (2 * i)
             // 공백 찍기
             int spaceSize = i < n ? n-i-1 : i-n+1;
+            // 마지막 -2의 경우 최대값에서 한사이클 줄어야 하는 수치 (2를 뺌.)
             int starSize = i < n ? i*2+1 :  (n*2-1)-(2*(i%n))-2; // 앞에 계산식은 시작점 구하기, 뒤에 마이너스의 경우 줄어드는 사이즈
             for (int j=0; j<spaceSize; j++) {
                 System.out.print(" ");
