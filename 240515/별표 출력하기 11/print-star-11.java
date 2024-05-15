@@ -12,7 +12,7 @@ public class Main {
         // 4 * * * * * * *
         // 5 *   *   *   *
         // 6 * * * * * * *
-        int size = n+(n*(n-1))-(n-1); // 3+(3*2)-2 = 7
+        int size = 3*(n)-(n-1); // 3*5-4 = 11
         for (int i=0; i<size; i++) { 
             for (int j=0; j<size; j++) {
                 if (i % 2 == 0) {
