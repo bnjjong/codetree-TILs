@@ -5,9 +5,10 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         StringBuilder sb = new StringBuilder();
-        String[] arr = new String[10];
+        // String[] arr = new String[10];
+        char[] arr = new char[10];
         for (int i=0; i<10; i++) {
-            arr[i] = sc.next();
+            arr[i] = sc.next().charAt(0);
         }
         for (int i=9; i>=0; i--) {
             sb.append(arr[i]);
