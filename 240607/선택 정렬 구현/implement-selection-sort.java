@@ -22,7 +22,7 @@ public class Main {
             int minIdx = i;
             // 0번 idx 부터 하나씩 채워 간다.
             // 가장 작은 idx를 루프를 돌면서 찾는다.
-            for (int j=i+1; j<length-1; j++) {
+            for (int j=i+1; j<length; j++) {
                 if (arr[minIdx] > arr[j]) {
                     minIdx = j;
 
