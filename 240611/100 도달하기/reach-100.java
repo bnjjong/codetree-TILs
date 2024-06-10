@@ -8,8 +8,8 @@ public class Main {
         int[] arr = new int[20];
         arr[0] = 1;
         arr[1] = n;
-        arr[2] = arr[0]+arr[1];
-        int idx = 2;
+
+        int idx = 1;
         while(true) {
             int nextInt = arr[idx] + arr[idx-1];
             arr[idx+1] = nextInt;
