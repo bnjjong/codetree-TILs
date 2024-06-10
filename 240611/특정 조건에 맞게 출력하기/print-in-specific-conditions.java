@@ -5,16 +5,17 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         
         int[] nArr = new int[100];
-        int cnt = 0;
+        int zeroPoint = 0;
         for (int i=0; i<100; i++) {
             int n = sc.nextInt();
             if (n == 0) {
+                zeroPoint = i;
                 break;
             }
             nArr[i] = n;
-            cnt++;
+
         }
-        for (int i=0; i<cnt; i++) {
+        for (int i=0; i<zeroPoint; i++) {
             int n = nArr[i];
             if (n % 2 == 0) {
                 n/=2;
