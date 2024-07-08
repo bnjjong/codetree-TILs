@@ -9,11 +9,16 @@ public class Main {
         int mod = 0;
         int[] modArr = new int[10];
 
-        while(a >= 1) {
+        while(a > 1) {
             mod = a%b;
+            // System.out.printf("%d  %d = %d \n", a, b, mod);
+            // System.out.printf("%d / %d = %d \n", a, b, a/b);
             a /= b;
+            
             modArr[mod]++;
+            
         }
+        // Arrays.stream(modArr).forEach(i -> System.out.print(i + " "));
 
         int modSum = 0;
         for (int i=0; i<10; i++) {
