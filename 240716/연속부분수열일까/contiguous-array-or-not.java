@@ -17,7 +17,7 @@ public class Main {
 
         int startN = bArr[0];
         boolean isPartA = false;
-        for (int i=0; i<a-b; i++) {
+        for (int i=0; i<=a-b; i++) { 
             if (aArr[i] == startN) {
                 isPartA = true;
                 for (int j=1; j<b; j++) {
