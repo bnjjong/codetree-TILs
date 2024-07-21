@@ -10,6 +10,7 @@ public class Main {
         for (int i=0; i<n; i++) {
             int no = sc.nextInt();
             if (top1 < no) {
+                top2 = top1;
                 top1 = no;
             } else if (top2 < no){
                 top2 = no;
