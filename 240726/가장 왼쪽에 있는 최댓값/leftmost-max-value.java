@@ -9,12 +9,11 @@ public class Main {
         for (int i=0; i<n; i++) {
             nArr[i] = sc.nextInt();
         }
-        int result1 = getMaxIdx(nArr, n);
-        int result2 = getMaxIdx(nArr, result1-1);
-
-        System.out.printf("%d %d", result1, result2);
-
-        
+        int maxIdx = n;
+        while(maxIdx > 1) {
+            maxIdx = getMaxIdx(nArr, maxIdx);
+            System.out.print(maxIdx+1 + " ");
+        }
     }
 
     public static int getMaxIdx(int[] arr, int endIdx) {
@@ -22,7 +21,7 @@ public class Main {
         int maxN = Integer.MIN_VALUE;
         for (int i=0; i<endIdx; i++) {
             if (maxN < arr[i]) {
-                maxIdx = i+1;
+                maxIdx = i;
                 maxN = arr[i];
             }
         }
