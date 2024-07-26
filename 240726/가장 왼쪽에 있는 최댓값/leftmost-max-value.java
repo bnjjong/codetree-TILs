@@ -10,7 +10,7 @@ public class Main {
             nArr[i] = sc.nextInt();
         }
         int maxIdx = n;
-        while(maxIdx > 1) {
+        while(maxIdx >= 1) {
             maxIdx = getMaxIdx(nArr, maxIdx);
             System.out.print(maxIdx+1 + " ");
         }
