@@ -13,6 +13,8 @@ public class Main {
                 if (j % 2 == 0) {
                     idx = i+(j * n);
                 } else {
+                    // n 홀수 열에서는 (전체 로우 X 현재 로우 idx) -1
+                    // 아래로 내려갈 수록 i 만큼 빼줘야 함.
                     idx = (n * (j+1)) -1 - i;
                 }
                 System.out.print(idx+" ");
