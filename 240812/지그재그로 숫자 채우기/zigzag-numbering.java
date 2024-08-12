@@ -13,7 +13,7 @@ public class Main {
                 if (j % 2 == 0) {
                     idx = i+(j * n);
                 } else {
-                    idx = (j * 2 * n)- 1 - i;
+                    idx = (n * (j+1)) -1 - i;
                 }
                 System.out.print(idx+" ");
             }
