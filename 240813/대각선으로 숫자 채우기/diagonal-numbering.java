@@ -15,7 +15,8 @@ public class Main {
                 row = 1;
                 col = i;
             } else {
-                row = (i % m) + 1;
+                // 1은 나머지가 계속 0이므로, 따로 처리
+                row = m == 1 ? i : (i % m) + 1;
                 col = m;
             }
             // System.out.printf("start row : %d, col : %d \n", row, col);
