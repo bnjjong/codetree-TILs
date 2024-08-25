@@ -16,6 +16,15 @@ public class Main {
             // System.out.print(coinP[i][0] +" " + coinP[i][1]+"\n");
         }
 
+        // m회에 걸쳐 동전의 위치를 입력받고 올바른 위치에 1을 표기합니다.
+        // 바로 마킹해도 되는군..ㅋ
+        // for(int i = 0; i < m; i++) {
+        //     int r = sc.nextInt();
+        //     int c = sc.nextInt();
+        //     arr[r][c] = 1;
+        // }
+               
+
         
         // for (int i=0; i<n; i++) {
         //     for (int j=0; j<n; j++) {
