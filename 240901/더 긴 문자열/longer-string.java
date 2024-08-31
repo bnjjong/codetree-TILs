@@ -13,7 +13,7 @@ public class Main {
         } else if (a.length() < b.length()) {
             System.out.printf("%s %d", b, b.length());
         } else {
-            System.out.println("same");
+            System.out.print("same");
         }
 
         
