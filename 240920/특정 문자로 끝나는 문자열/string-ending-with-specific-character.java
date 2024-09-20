@@ -11,11 +11,18 @@ public class Main {
         }
         char c = sc.next().charAt(0);
 
+        boolean isExist = false;
         for (int i=0; i<n; i++) {
             String s = arr[i];
             if (s.charAt(s.length()-1) == c) {
                 System.out.println(s);
+                isExist = true;
             }
         }
+
+        if (!isExist) {
+            System.out.println("None");
+        }
+
     }
 }
