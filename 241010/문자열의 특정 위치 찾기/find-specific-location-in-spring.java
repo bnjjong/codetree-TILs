@@ -8,6 +8,6 @@ public class Main {
 
         int idx = a.indexOf(b);
 
-        System.out.println(idx > 0 ? idx : "No");
+        System.out.println(idx >= 0 ? idx : "No");
     }
 }
